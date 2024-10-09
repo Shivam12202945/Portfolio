@@ -11,6 +11,7 @@
     height: 100vh;
     overflow-y:auto;
     overflow-x:hidden;
+    width: 100vw;
 }
 
 .container{
@@ -850,5 +851,71 @@ display: block;
 
     .contactus-container h1 {
         font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .project-card {
+        flex: 1 1 100%; /* One card per row */
+    }
+
+    .btn-grp {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-skills-container {
+        justify-content: center;
+    }
+
+    .project-skill {
+        width: 35px;
+        height: 35px;
+    }
+
+    .project-number {
+        font-size: 1.8rem;
+    }
+
+    .project-subheading {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media only screen and (max-width: 576px) {
+    .project-container {
+        padding: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .btn-pink {
+        padding: 8px 12px;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .project-number {
+        font-size: 1.6rem;
+    }
+
+    .project-subheading {
+        font-size: 0.9rem;
     }
 }
